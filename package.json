@@ -12,7 +12,8 @@
   },
   "scripts": {
     "debug": "node debug app.js",
-    "start": "node app.js"
+    "start": "node app.js",
+    "eslint": "eslint api/** --fix --cache"
   },
   "main": "app.js",
   "repository": {
@@ -21,5 +22,12 @@
   },
   "author": "Brandy Lee Camacho",
   "linkedIn": "https://www.linkedin.com/in/brandycamacho/",
-  "email": "brandy@udacity.com"
+  "email": "brandy@udacity.com",
+  "devDependencies": {
+    "babel-eslint": "^8.2.2",
+    "eslint-config-google": "^0.9.1",
+    "eslint-plugin-fp": "^2.3.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-promise": "^3.7.0"
+  }
 }
