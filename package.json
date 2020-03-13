@@ -7,13 +7,16 @@
   "dependencies": {
     "include-all": "^1.0.0",
     "rc": "1.1.0",
-    "sails": "^1.0.0",
-    "sails-disk": "~0.10.9"
+    "sails": "^1.2.2",
+    "sails-disk": "~0.10.9",
+    "snyk": "^1.298.1"
   },
   "scripts": {
     "debug": "node debug app.js",
     "start": "node app.js",
-    "eslint": "eslint api/** --fix --cache"
+    "eslint": "eslint api/** --fix --cache",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "main": "app.js",
   "repository": {
@@ -29,5 +32,6 @@
     "eslint-plugin-fp": "^2.3.0",
     "eslint-plugin-import": "^2.9.0",
     "eslint-plugin-promise": "^3.7.0"
-  }
+  },
+  "snyk": true
 }
